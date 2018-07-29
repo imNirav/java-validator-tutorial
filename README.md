@@ -1,1 +1,2 @@
-"# java-validator-tutorial" 
+# java-validator-tutorial
+Tutorial for java-validator library
