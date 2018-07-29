@@ -1,0 +1,27 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.2.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"){
+	    }
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+         compile 'com.github.imNirav.java.validator:java-validator:1.0.1'
+    	 compile 'org.springframework:spring-webmvc:4.2.6.RELEASE'
+ 	     compile('org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE'){}
+    }
+
